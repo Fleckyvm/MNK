@@ -15,3 +15,4 @@ kodi-send --action=Notification"(NormandyEPG,GRABBERS INSTALADOS,2000,/storage/.
 sleep 3
 systemctl restart service.tvheadend43
 fi
+kodi-send -a RunAddOn"(script.normandy)"
