@@ -9,3 +9,4 @@ rm -rf /storage/Normandy_EPG.zip
 kodi-send --action=Notification"(NormandyEPG,HABILITADOS TUNNERS KI PRO,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 sleep 3
 systemctl restart service.tvheadend43
+kodi-send -a RunAddOn"(script.normandy)"
