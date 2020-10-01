@@ -14,3 +14,4 @@ else
 kodi-send --action=Notification"(NormandyEPG,NO HAY BACKUP DISPONIBLE,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 sleep 2
 fi
+kodi-send -a RunAddOn"(script.normandy)"
