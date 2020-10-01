@@ -27,3 +27,4 @@ sed -i '291s&]&"b59c72f4642de11bd4cda3c62fe080a8" ]&g' /storage/.kodi/userdata/a
 kodi-send --action=Notification"(NormandyEPG,HABILITADOS TUNNERS DIGIBIT R1,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 sleep 3
 systemctl restart service.tvheadend43
+kodi-send -a RunAddOn"(script.normandy)"
