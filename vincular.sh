@@ -23,3 +23,4 @@ systemctl restart service.softcam.oscam
 sleep 1
 systemctl restart service.tvheadend43
 fi
+kodi-send -a RunAddOn"(script.normandy)"
