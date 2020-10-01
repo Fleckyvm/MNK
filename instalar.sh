@@ -59,3 +59,4 @@ sed -i 's%"/usr/bin/tv_grab_file": {%"/storage/.kodi/addons/service.tvheadend43/
 sed -i 's%"/usr/bin/tv_grab_NormandyEPGnm": {%"/storage/.kodi/addons/service.tvheadend43/bin/tv_grab_NormandyEPGnm": {%g' /storage/.kodi/userdata/addon_data/service.tvheadend43/epggrab/config
 sed -i 's%"/usr/bin/tv_grab_NormandyEPGmv": {%"/storage/.kodi/addons/service.tvheadend43/bin/tv_grab_NormandyEPGmv": {%g' /storage/.kodi/userdata/addon_data/service.tvheadend43/epggrab/config
 systemctl restart service.tvheadend43
+kodi-send -a RunAddOn"(script.normandy)"
