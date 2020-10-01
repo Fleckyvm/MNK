@@ -9,3 +9,4 @@ rm -rf /storage/.kodi/NormandyEPG
 kodi-send --action=Notification"(NormandyEPG,DESINSTALADO,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 sleep 3
 systemctl restart service.tvheadend43
+kodi-send -a RunAddOn"(script.normandy)"
