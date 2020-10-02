@@ -13,3 +13,4 @@ sed -i 's%"Deshabilitar servicio Autoactualizacion"%"Habilitar servicio Autoactu
 rm -f /storage/.kodi/addons/script.normandy/bin/service.sh
 kodi-send --action=Notification"(NormandyEPG,NOK,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 fi
+systemctl restart kodi
