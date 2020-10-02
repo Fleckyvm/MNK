@@ -2,6 +2,10 @@
 
 if grep -w "Habilitar servicio Notificacion" /storage/.kodi/addons/script.normandy/resources/language/english/strings.po
 then
+
+sed -i 's%"Deshabilitar servicio Autoactualizacion"%"Habilitar servicio Autoactualizacion"%g' /storage/.kodi/addons/script.normandy/resources/language/english/strings.po
+rm -f /storage/.kodi/addons/script.normandy/bin/service.sh
+
 sed -i 's%"Habilitar servicio Notificacion"%"Deshabilitar servicio Notificacion"%g' /storage/.kodi/addons/script.normandy/resources/language/english/strings.po
 rm -f /storage/.kodi/addons/script.normandy/bin/service.sh
 cd /storage/.kodi/addons/script.normandy/bin
