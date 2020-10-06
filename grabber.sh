@@ -9,6 +9,7 @@ sed -i '340s%"enabled": true,%"enabled": false,%g' /storage/.kodi/userdata/addon
 sed -i '362s%"enabled": false,%"enabled": true,%g' /storage/.kodi/userdata/addon_data/service.tvheadend43/epggrab/config
 
 systemctl restart service.tvheadend43
+sleep 2
 kodi-send --action=Notification"(NormandyEPG,CONFIGURADA EPG SIN COLORES,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 sleep 2
 systemctl restart kodi
@@ -20,6 +21,7 @@ sed -i '340s%"enabled": false,%"enabled": true,%g' /storage/.kodi/userdata/addon
 sed -i '362s%"enabled": true,%"enabled": false,%g' /storage/.kodi/userdata/addon_data/service.tvheadend43/epggrab/config
 
 systemctl restart service.tvheadend43
+sleep 2
 kodi-send --action=Notification"(NormandyEPG,CONFIGURADA EPG CON COLORES,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 sleep 2
 systemctl restart kodi
