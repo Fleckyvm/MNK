@@ -26,6 +26,10 @@ sed -i 's%"Usar Grabber (SIN Colores)"%"Usar Grabber (CON Colores)"%g' /storage/
 sed -i '340s%"enabled": false,%"enabled": true,%g' /storage/.kodi/userdata/addon_data/service.tvheadend43/epggrab/config
 sed -i '362s%"enabled": true,%"enabled": false,%g' /storage/.kodi/userdata/addon_data/service.tvheadend43/epggrab/config
 
+rm -rf /storage/.kodi/userdata/addon_data/service.tvheadend43/epgdb.v3.tmp
+rm -rf /storage/.kodi/userdata/addon_data/service.tvheadend43/epgdb.v3
+rm -rf /storage/.kodi/userdata/Database/Epg12.db
+
 sleep 2
 systemctl restart service.tvheadend43
 systemctl restart kodi
