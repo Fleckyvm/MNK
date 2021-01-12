@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if
-[ "`cat /storage/.kodi/NormandyEPG/Normandy_EPG.ver 2>/dev/null`" != "`curl -s http://normandy.es/teuve/Normandy_EPG.ver 2>/dev/null`" ]; 
+[ "`cat /storage/.kodi/NormandyEPG/Normandy_EPG.ver 2>/dev/null`" != "`curl -L http://normandy.es/teuve/Normandy_EPG.ver 2>/dev/null`" ]; 
 then
 
 #
