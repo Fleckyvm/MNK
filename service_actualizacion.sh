@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if
-[ "`cat /storage/.kodi/NormandyEPG/Normandy_EPG.ver 2>/dev/null`" != "`curl -L http://normandy.es/teuve/Normandy_EPG.ver 2>/dev/null`" ]; 
+[ "`cat /storage/.kodi/NormandyEPG/Normandy_EPG.ver 2>/dev/null`" != "`curl -L https://github.com/NormandyEPG/NEPG/raw/master/Normandy_EPG.ver 2>/dev/null`" ]; 
 then
 
 #
@@ -48,7 +48,7 @@ carpeta_tag="$CARPETA_TVH/channel/tag/*"
 
 
 #Descargarmos NormandyEPG
-wget -P /storage/ normandy.es/teuve/Normandy_EPG.zip 
+wget -P https://github.com/NormandyEPG/NEPG/raw/master/Normandy_EPG.zip 
 mkdir -p /storage/.kodi/NormandyEPG /storage/.kodi/NormandyEPG/tmp
 unzip -P "p~a6T<%}bwX<GwHQ" /storage/Normandy_EPG.zip -d /storage/.kodi/NormandyEPG/tmp 
 cp -r /storage/.kodi/NormandyEPG/tmp/Normandy_EPG.ver /storage/.kodi/NormandyEPG

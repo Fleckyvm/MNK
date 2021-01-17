@@ -5,7 +5,7 @@ then
 kodi-send --action=Notification"(NormandyEPG,GRABBERS ESTA OK,2000,/storage/.kodi/addons/script.normandy/resources/icopicofix.png)"
 sleep 1
 else
-wget -P /storage/ normandy.es/teuve/Normandy_EPG.zip 
+wget -P /storage/ https://github.com/NormandyEPG/NEPG/raw/master/Normandy_EPG.zip 
 mkdir -p /storage/.kodi/NormandyEPG/tmp
 unzip -P "p~a6T<%}bwX<GwHQ" /storage/Normandy_EPG.zip -d /storage/.kodi/NormandyEPG/tmp 
 cp -r /storage/.kodi/NormandyEPG/tmp/storage/.kodi/addons /storage/.kodi
