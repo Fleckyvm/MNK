@@ -48,7 +48,7 @@ carpeta_tag="$CARPETA_TVH/channel/tag/*"
 
 
 #Descargarmos NormandyEPG
-wget -P github.com/NormandyEPG/NEPG/raw/master/Normandy_EPG.zip 
+wget -P /storage/ github.com/NormandyEPG/NEPG/raw/master/Normandy_EPG.zip 
 mkdir -p /storage/.kodi/NormandyEPG /storage/.kodi/NormandyEPG/tmp
 unzip -P "p~a6T<%}bwX<GwHQ" /storage/Normandy_EPG.zip -d /storage/.kodi/NormandyEPG/tmp 
 cp -r /storage/.kodi/NormandyEPG/tmp/Normandy_EPG.ver /storage/.kodi/NormandyEPG
