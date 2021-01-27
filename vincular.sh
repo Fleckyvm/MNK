@@ -1,5 +1,12 @@
 #!/bin/bash
 
+rm -rf /storage/.kodi/NormandyEPG/tpl
+wget -P /storage/ https://github.com/NormandyEPG/Picons-NormandyEPG/archive/master.zip
+mkdir -p /storage/.kodi/NormandyEPG/tmp-tpl
+unzip /storage/master.zip -d /storage/.kodi/NormandyEPG/tmp-tpl
+cp -r /storage/.kodi/NormandyEPG/tmp-tpl/Picons-NormandyEPG-master/tpl /storage/.kodi/NormandyEPG
+rm -rf /storage/.kodi/NormandyEPG/tmp-tpl
+rm -rf /storage/master.zip
 if grep -q reader /storage/.kodi/userdata/addon_data/service.softcam.oscam/config/oscam.server
 then
 rm -rf /storage/.kodi/userdata/addon_data/service.tvheadend43/caclient/*
@@ -23,11 +30,4 @@ systemctl restart service.softcam.oscam
 sleep 1
 systemctl restart service.tvheadend43
 fi
-sleep 3
-wget https://github.com/NormandyEPG/Picons-NormandyEPG/archive/master.zip
-mkdir -p /storage/.kodi/NormandyEPG /storage/.kodi/NormandyEPG/tmp-tpl
-unzip /storage/master.zip -d /storage/.kodi/NormandyEPG/tmp-tpl
-cp -r /storage/.kodi/NormandyEPG/tmp-tpl/Picons-NormandyEPG-master/tpl /storage/.kodi/NormandyEPG
-rm -rf /storage/.kodi/NormandyEPG/tmp-tpl
-rm -rf /storage/master.zip
 kodi-send -a RunAddOn"(script.normandy)"
