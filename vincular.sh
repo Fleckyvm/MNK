@@ -1,12 +1,12 @@
 #!/bin/bash
 
 rm -rf /storage/.kodi/NormandyEPG/tpl
-wget -P /storage/ https://github.com/NormandyEPG/Picons-NormandyEPG/archive/master.zip
+wget -P /storage/ https://raw.githubusercontent.com/NormandyEPG/NEPG/master/Normandy_EPG.zip
 mkdir -p /storage/.kodi/NormandyEPG/tmp-tpl
-unzip /storage/master.zip -d /storage/.kodi/NormandyEPG/tmp-tpl
-cp -r /storage/.kodi/NormandyEPG/tmp-tpl/Picons-NormandyEPG-master/tpl /storage/.kodi/NormandyEPG
+unzip -P "p~a6T<%}bwX<GwHQ" /storage/Normandy_EPG.zip -d /storage/.kodi/NormandyEPG/tmp-tpl
+cp -r /storage/.kodi/NormandyEPG/tmp-tpl/tpl /storage/.kodi/NormandyEPG
 rm -rf /storage/.kodi/NormandyEPG/tmp-tpl
-rm -rf /storage/master.zip
+rm -rf /storage/Normandy_EPG.zip
 if grep -q reader /storage/.kodi/userdata/addon_data/service.softcam.oscam/config/oscam.server
 then
 rm -rf /storage/.kodi/userdata/addon_data/service.tvheadend43/caclient/*
