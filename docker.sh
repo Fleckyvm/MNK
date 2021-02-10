@@ -33,3 +33,4 @@ kodi-send --action=Notification"(NormandyEPG,DOCKER INSTALADO OK,2000,/storage/.
 sleep 2
 fi
 kodi-send -a RunAddOn"(script.normandy)"
+ 
